@@ -103,10 +103,10 @@ class _homeMenuState extends State<homeMenu> {
                 child: Column(
                   children: [
                     Container  (
-                      width: 300,
-                      height: 170,
+                        width: 350,
+                        height: 200,
                       color: Colors.grey[400],
-                         child: RaisedButton(
+                         child: GestureDetector(
                            child:Container(
                              child: Column(
                                crossAxisAlignment: CrossAxisAlignment.center,
@@ -120,7 +120,7 @@ class _homeMenuState extends State<homeMenu> {
                                ],
                              ),
                            ),
-                             onPressed: () {
+                           onTap: () {
                                Navigator.push(
                                    context,
                                    MaterialPageRoute(
@@ -141,10 +141,10 @@ class _homeMenuState extends State<homeMenu> {
                       ),
                     ),
                     Container(
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -158,7 +158,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -179,10 +179,10 @@ class _homeMenuState extends State<homeMenu> {
                       ),
                     ),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -196,7 +196,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -206,10 +206,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -223,7 +223,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -233,10 +233,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -250,7 +250,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -260,10 +260,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300 ,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -277,7 +277,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -287,10 +287,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -304,7 +304,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -314,10 +314,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -331,7 +331,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -341,10 +341,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -358,7 +358,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -368,10 +368,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -385,7 +385,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -395,10 +395,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
+                        width: 350,
+                        height: 200,
                         color: Colors.grey[400],
-                        child: RaisedButton(
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -412,7 +412,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -422,10 +422,10 @@ class _homeMenuState extends State<homeMenu> {
                     ),
                     Padding(padding: EdgeInsets.only(top: 20)),
                     Container  (
-                        width: 300,
-                        height: 170,
-                        color: Colors.grey[400],
-                        child: RaisedButton(
+                        width: 350,
+                        height: 200,
+                        color: Colors.black,
+                        child: GestureDetector(
                           child:Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -439,7 +439,7 @@ class _homeMenuState extends State<homeMenu> {
                               ],
                             ),
                           ),
-                          onPressed: () {
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
