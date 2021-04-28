@@ -752,7 +752,7 @@ class Item3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: LinearGradient( 
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             stops: [

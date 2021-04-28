@@ -1,49 +1,65 @@
-import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Home_page5/delegates/portfolio_sliver_app_bar.dart';
+import 'package:flutter_app/Home_page5/delegates/sliver_persistent_header_delegate_impl.dart';
+import 'package:flutter_app/Home_page5/portfolio_gallery_sub_page.dart';
+import 'package:flutter_app/Home_page5/portfolio_tutorials_sub_page.dart';
+import 'package:tuple/tuple.dart';
 
 class tab5 extends StatefulWidget {
   @override
   _tab5State createState() => _tab5State();
 }
 
-class _tab5State extends State<tab5> {
+class _tab5State extends State<tab5> with SingleTickerProviderStateMixin {
+  final List<Tuple3> _pages = [
+    Tuple3(
+      'รายละเอียดเเละเงื่อนไข',
+      PortfolioTutorialsSubPage(),
+      Icon(Icons.video_library),
+    ),
+    Tuple3('สาขาที่ร่วมรายการ', PortfolioGallerySubPage(), Icon(Icons.image)),
+  ];
+  TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: _pages.length, vsync: this);
+    _tabController.addListener(() => setState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          title: Text(
-            'สิทธิพิเศษสำหรับคุณ',
-            style: TextStyle(color: Colors.black, fontSize: 13),
-          ),
-          iconTheme: IconThemeData(color: Colors.black),
-        ),
-        body: SingleChildScrollView(
-            child: Center(
-                child: Container(
-          child: Column(children: [
-            Container(
-              child: Image.asset('image/Home_tab5.jpg'),
-            ),
-             Padding(padding: EdgeInsets.only(top: 10)),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: AutoSizeText(
-                      'ส่วนลด 50 บาท เมื่อซื้ออาหารเม็ด Royal canin สูตรลูกเเมว (Kittn)ขนาด1 กก.ขึ่นไป',
-                      style: TextStyle(fontSize: 14, color: Colors.red),
-                    ),
-                  ),
-                ],
+    return Scaffold(
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            PortfolioSliverAppBar(_pages[_tabController.index].item1),
+            SliverPersistentHeader(
+              delegate: SliverPersistentHeaderDelegateImpl(
+                tabBar: TabBar(
+                  labelColor: Colors.red[600],
+                  indicatorColor: Colors.red[600],
+                  controller: _tabController,
+                  tabs: _pages
+                      .map<Tab>((Tuple3 page) => Tab(text: page.item1))
+                      .toList(),
+                ),
               ),
             ),
-            Padding(padding: EdgeInsets.only(top: 10)),
-          ]),
-        ))),
+          ];
+        },
+        body: TabBarView(
+          controller: _tabController,
+          children: _pages.map<Widget>((Tuple3 page) => page.item2).toList(),
+        ),
       ),
     );
   }

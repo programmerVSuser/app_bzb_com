@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class controlTabbarHomepage11 extends SliverPersistentHeaderDelegate {
+class controlTabbarHomepage6 extends SliverPersistentHeaderDelegate {
   final TabBar tabBar;
   final Color color;
 
-  const controlTabbarHomepage11({
+  const controlTabbarHomepage6({
     Color color = Colors.transparent,
     @required this.tabBar,
   }) : this.color = color;

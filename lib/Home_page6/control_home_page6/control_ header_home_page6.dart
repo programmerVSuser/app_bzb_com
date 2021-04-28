@@ -1,9 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class ControlHomePage10 extends StatelessWidget {
+class ControlHomePage6 extends StatelessWidget {
   final String _title;
-  const ControlHomePage10(
+  const ControlHomePage6(
       this._title, {
         Key key,
       }) : super(key: key);
@@ -29,7 +29,7 @@ class ControlHomePage10 extends StatelessWidget {
               children: [
                 Expanded(
                     child: Image.asset(
-                      'image/Home_tab10.jpg',
+                      'image/Home_tab6.jpg',
                       fit: BoxFit.fill,
                       height: double.infinity,
                       width: double.infinity,
@@ -41,7 +41,7 @@ class ControlHomePage10 extends StatelessWidget {
                       children: [
                         Expanded(
                             child: AutoSizeText(
-                              '',
+                              'ส่วนลด 50 บาท เมื่อซื้ออาหารเม็ด Royal canin สูตรลูกหมา (Kittn)ขนาด1 กก.ขึ่นไป',
                               style: TextStyle(fontSize: 18, color: Colors.red),
                             )),
                       ],

@@ -2,9 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:passwordfield/passwordfield.dart';
-
 import 'conditionPage.dart';
-import 'homeMenu.dart';
 
 bool monVal = false;
 bool tuVal = false;

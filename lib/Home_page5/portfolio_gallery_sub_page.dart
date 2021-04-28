@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class PortfolioGallerySubPage extends StatelessWidget {
@@ -11,15 +12,25 @@ class PortfolioGallerySubPage extends StatelessWidget {
       ],
     );
   }
-
-  SliverFillRemaining _buildSliverContent() {
+  _buildSliverContent() {
     return SliverFillRemaining(
-      child: Center(
-        child: Text(
-          'Gallery',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-        ),
-      ),
+     child: Container(
+        padding: EdgeInsets.only(top:20,left: 20,right: 20),
+      child: Column(
+          children:[
+            Row(
+              children: [
+                Expanded(
+                  child: AutoSizeText(
+                    '*ใช้ได้ที่ร้านค้าเพ็ทซ็อป คลนิก เเละ ดรงพยาบาลสัตว์ที่ร่วมรายการเท่านั้น',
+                    style: TextStyle(fontSize: 16, color: Colors.black45),
+                  ),
+                ),
+              ],
+            ),
+          ]
+      )
+     )
     );
   }
 }
